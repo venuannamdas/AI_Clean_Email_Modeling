@@ -1,6 +1,9 @@
 # AI_Clean_Email_Modeling
 Clean and Green Email : Ranking and multi-classification Problem -AI solutions
 
+python/Google Co-lab File: capstone_Final.ipynb
+
+
 Title: AI-Driven Eco-Friendly Email Management for Enhanced Productivity in the Automotive Industry
 
 
