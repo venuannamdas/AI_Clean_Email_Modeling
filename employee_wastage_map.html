@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c6eb6ce427c1a2ab2d5d97d4da58390c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c6eb6ce427c1a2ab2d5d97d4da58390c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c6eb6ce427c1a2ab2d5d97d4da58390c = L.map(
+                "map_c6eb6ce427c1a2ab2d5d97d4da58390c",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_62f9e6bfef44f6c515239063831253a0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+            var marker_063b2d151412788cce869777793ab85a = L.marker(
+                [35.8617, 104.1954],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_d29b061f4c6324546e31b29e0a5523d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_95e5eb835d22fabef3d2a29c3ba4c548 = $(`<div id="html_95e5eb835d22fabef3d2a29c3ba4c548" style="width: 100.0%; height: 100.0%;"><b>Country:</b> China<br><b>Employee Population:</b> 18441<br><b>Total Salary per Day:</b> $354067.20<br><b>Total Wastage Cost per Day:</b> $110646.00<br></div>`)[0];
+                popup_d29b061f4c6324546e31b29e0a5523d3.setContent(html_95e5eb835d22fabef3d2a29c3ba4c548);
+            
+        
+
+        marker_063b2d151412788cce869777793ab85a.bindPopup(popup_d29b061f4c6324546e31b29e0a5523d3)
+        ;
+
+        
+    
+    
+            var marker_1e063c0c180147d012d1e7162fa34dbb = L.marker(
+                [20.5937, 78.9629],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_a7051f9f835b7d9ab73036c334a68096 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_826043609159dad5709764408e4faa64 = $(`<div id="html_826043609159dad5709764408e4faa64" style="width: 100.0%; height: 100.0%;"><b>Country:</b> India<br><b>Employee Population:</b> 18380<br><b>Total Salary per Day:</b> $352896.00<br><b>Total Wastage Cost per Day:</b> $110280.00<br></div>`)[0];
+                popup_a7051f9f835b7d9ab73036c334a68096.setContent(html_826043609159dad5709764408e4faa64);
+            
+        
+
+        marker_1e063c0c180147d012d1e7162fa34dbb.bindPopup(popup_a7051f9f835b7d9ab73036c334a68096)
+        ;
+
+        
+    
+    
+            var marker_e74c6b31f4fc8a91cb77a179102548ab = L.marker(
+                [37.0902, -95.7129],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_347d2dd1be6291256f9aef2f66c07770 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1bfc9b71476c6a21242141481184bd1c = $(`<div id="html_1bfc9b71476c6a21242141481184bd1c" style="width: 100.0%; height: 100.0%;"><b>Country:</b> United States<br><b>Employee Population:</b> 7031<br><b>Total Salary per Day:</b> $134995.20<br><b>Total Wastage Cost per Day:</b> $42186.00<br></div>`)[0];
+                popup_347d2dd1be6291256f9aef2f66c07770.setContent(html_1bfc9b71476c6a21242141481184bd1c);
+            
+        
+
+        marker_e74c6b31f4fc8a91cb77a179102548ab.bindPopup(popup_347d2dd1be6291256f9aef2f66c07770)
+        ;
+
+        
+    
+    
+            var marker_bbf7cdacc10c04157f986ee939c81604 = L.marker(
+                [-6.2088, 106.8456],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_b3b2c6cf8d29fef80532164bc39c50a8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b24efad5107adc36edd5e423f032b61b = $(`<div id="html_b24efad5107adc36edd5e423f032b61b" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Indonesia<br><b>Employee Population:</b> 6273<br><b>Total Salary per Day:</b> $120441.60<br><b>Total Wastage Cost per Day:</b> $37638.00<br></div>`)[0];
+                popup_b3b2c6cf8d29fef80532164bc39c50a8.setContent(html_b24efad5107adc36edd5e423f032b61b);
+            
+        
+
+        marker_bbf7cdacc10c04157f986ee939c81604.bindPopup(popup_b3b2c6cf8d29fef80532164bc39c50a8)
+        ;
+
+        
+    
+    
+            var marker_f60108df1af81e5311e2f459e40435be = L.marker(
+                [30.3753, 69.3451],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_333ae402669d925f77c0e7e993c8337e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d37b3fdd561d58ab485325614e3fda3b = $(`<div id="html_d37b3fdd561d58ab485325614e3fda3b" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Pakistan<br><b>Employee Population:</b> 2225<br><b>Total Salary per Day:</b> $42720.00<br><b>Total Wastage Cost per Day:</b> $13350.00<br></div>`)[0];
+                popup_333ae402669d925f77c0e7e993c8337e.setContent(html_d37b3fdd561d58ab485325614e3fda3b);
+            
+        
+
+        marker_f60108df1af81e5311e2f459e40435be.bindPopup(popup_333ae402669d925f77c0e7e993c8337e)
+        ;
+
+        
+    
+    
+            var marker_5f8cefa2313d96d6006754fe4fae4f14 = L.marker(
+                [-14.235, -51.9253],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_4f90e536d14d661207c2aedbc239ab8c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_882de202d556f38f8fe32fb2906cc140 = $(`<div id="html_882de202d556f38f8fe32fb2906cc140" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Brazil<br><b>Employee Population:</b> 2213<br><b>Total Salary per Day:</b> $42489.60<br><b>Total Wastage Cost per Day:</b> $13278.00<br></div>`)[0];
+                popup_4f90e536d14d661207c2aedbc239ab8c.setContent(html_882de202d556f38f8fe32fb2906cc140);
+            
+        
+
+        marker_5f8cefa2313d96d6006754fe4fae4f14.bindPopup(popup_4f90e536d14d661207c2aedbc239ab8c)
+        ;
+
+        
+    
+    
+            var marker_2aed575e54a05739398f9053489a88b4 = L.marker(
+                [9.082, 7.4951],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_61d42dee024f6c31d663cbf28a6f9236 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_daf203ab72752ad44826e59db4ba2bf3 = $(`<div id="html_daf203ab72752ad44826e59db4ba2bf3" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Nigeria<br><b>Employee Population:</b> 4211<br><b>Total Salary per Day:</b> $80851.20<br><b>Total Wastage Cost per Day:</b> $25266.00<br></div>`)[0];
+                popup_61d42dee024f6c31d663cbf28a6f9236.setContent(html_daf203ab72752ad44826e59db4ba2bf3);
+            
+        
+
+        marker_2aed575e54a05739398f9053489a88b4.bindPopup(popup_61d42dee024f6c31d663cbf28a6f9236)
+        ;
+
+        
+    
+    
+            var marker_403da51868dd94c7b750cc0d041379a2 = L.marker(
+                [23.685, 90.3563],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_e707e6d1f725cedd8e24097da07c0d1c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_242de9d0f2140c7463c25fd2ba96d965 = $(`<div id="html_242de9d0f2140c7463c25fd2ba96d965" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Bangladesh<br><b>Employee Population:</b> 1166<br><b>Total Salary per Day:</b> $22387.20<br><b>Total Wastage Cost per Day:</b> $6996.00<br></div>`)[0];
+                popup_e707e6d1f725cedd8e24097da07c0d1c.setContent(html_242de9d0f2140c7463c25fd2ba96d965);
+            
+        
+
+        marker_403da51868dd94c7b750cc0d041379a2.bindPopup(popup_e707e6d1f725cedd8e24097da07c0d1c)
+        ;
+
+        
+    
+    
+            var marker_1ca941cd4a9f648f578ba8c0f6045cf3 = L.marker(
+                [61.524, 105.3188],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_ef5fc1149e71aa0172c0adee894122b7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f2791186e0305cf628559dd0a7f4bb96 = $(`<div id="html_f2791186e0305cf628559dd0a7f4bb96" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Russia<br><b>Employee Population:</b> 2846<br><b>Total Salary per Day:</b> $54643.20<br><b>Total Wastage Cost per Day:</b> $17076.00<br></div>`)[0];
+                popup_ef5fc1149e71aa0172c0adee894122b7.setContent(html_f2791186e0305cf628559dd0a7f4bb96);
+            
+        
+
+        marker_1ca941cd4a9f648f578ba8c0f6045cf3.bindPopup(popup_ef5fc1149e71aa0172c0adee894122b7)
+        ;
+
+        
+    
+    
+            var marker_5994d18b850f4faefaec0ece18802266 = L.marker(
+                [23.6345, -102.5528],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_3258a269a6b8b7fd49625c30e40c9f7a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f58da9b92f012db10131e680d72beed9 = $(`<div id="html_f58da9b92f012db10131e680d72beed9" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Mexico<br><b>Employee Population:</b> 2126<br><b>Total Salary per Day:</b> $40819.20<br><b>Total Wastage Cost per Day:</b> $12756.00<br></div>`)[0];
+                popup_3258a269a6b8b7fd49625c30e40c9f7a.setContent(html_f58da9b92f012db10131e680d72beed9);
+            
+        
+
+        marker_5994d18b850f4faefaec0ece18802266.bindPopup(popup_3258a269a6b8b7fd49625c30e40c9f7a)
+        ;
+
+        
+    
+    
+            var marker_f7538a4b37a9dd64fa50e45bae5ee70a = L.marker(
+                [36.2048, 138.2529],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_a0ff13d3471858ee1f1bedf4f49f986d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_82a81873367504d0bfb7f997e34c8b76 = $(`<div id="html_82a81873367504d0bfb7f997e34c8b76" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Japan<br><b>Employee Population:</b> 6526<br><b>Total Salary per Day:</b> $125299.20<br><b>Total Wastage Cost per Day:</b> $39156.00<br></div>`)[0];
+                popup_a0ff13d3471858ee1f1bedf4f49f986d.setContent(html_82a81873367504d0bfb7f997e34c8b76);
+            
+        
+
+        marker_f7538a4b37a9dd64fa50e45bae5ee70a.bindPopup(popup_a0ff13d3471858ee1f1bedf4f49f986d)
+        ;
+
+        
+    
+    
+            var marker_9058f675a6766e78faea16050b6332d1 = L.marker(
+                [9.145, 40.4897],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_21f3aabf6a2224acfc7069f7e9650032 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4ae8a5aed10b4a7c228cc901510946e8 = $(`<div id="html_4ae8a5aed10b4a7c228cc901510946e8" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Ethiopia<br><b>Employee Population:</b> 1201<br><b>Total Salary per Day:</b> $23059.20<br><b>Total Wastage Cost per Day:</b> $7206.00<br></div>`)[0];
+                popup_21f3aabf6a2224acfc7069f7e9650032.setContent(html_4ae8a5aed10b4a7c228cc901510946e8);
+            
+        
+
+        marker_9058f675a6766e78faea16050b6332d1.bindPopup(popup_21f3aabf6a2224acfc7069f7e9650032)
+        ;
+
+        
+    
+    
+            var marker_cf2b63fa052a17ce08b41494ccea63be = L.marker(
+                [12.8797, 121.774],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_e3befd40628a6ba184585699c2c5fc74 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f868368a121bc130ca84a90369fe3036 = $(`<div id="html_f868368a121bc130ca84a90369fe3036" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Philippines<br><b>Employee Population:</b> 6130<br><b>Total Salary per Day:</b> $117696.00<br><b>Total Wastage Cost per Day:</b> $36780.00<br></div>`)[0];
+                popup_e3befd40628a6ba184585699c2c5fc74.setContent(html_f868368a121bc130ca84a90369fe3036);
+            
+        
+
+        marker_cf2b63fa052a17ce08b41494ccea63be.bindPopup(popup_e3befd40628a6ba184585699c2c5fc74)
+        ;
+
+        
+    
+    
+            var marker_0e0af22ed7675ca5ada8cfdd416d5957 = L.marker(
+                [26.8206, 30.8025],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_5fba41cd2305a24ae6c52ab1e1ef5d99 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_344de837e1b018a9bdd32e2c8cdc8ce7 = $(`<div id="html_344de837e1b018a9bdd32e2c8cdc8ce7" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Egypt<br><b>Employee Population:</b> 2103<br><b>Total Salary per Day:</b> $40377.60<br><b>Total Wastage Cost per Day:</b> $12618.00<br></div>`)[0];
+                popup_5fba41cd2305a24ae6c52ab1e1ef5d99.setContent(html_344de837e1b018a9bdd32e2c8cdc8ce7);
+            
+        
+
+        marker_0e0af22ed7675ca5ada8cfdd416d5957.bindPopup(popup_5fba41cd2305a24ae6c52ab1e1ef5d99)
+        ;
+
+        
+    
+    
+            var marker_7de6d9cc7492325f992eccb0f0745d60 = L.marker(
+                [14.0583, 108.2772],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_996c0063b7f0994529ac504868dfb254 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_98065778dcee295484e3054da4b37930 = $(`<div id="html_98065778dcee295484e3054da4b37930" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Vietnam<br><b>Employee Population:</b> 4997<br><b>Total Salary per Day:</b> $95942.40<br><b>Total Wastage Cost per Day:</b> $29982.00<br></div>`)[0];
+                popup_996c0063b7f0994529ac504868dfb254.setContent(html_98065778dcee295484e3054da4b37930);
+            
+        
+
+        marker_7de6d9cc7492325f992eccb0f0745d60.bindPopup(popup_996c0063b7f0994529ac504868dfb254)
+        ;
+
+        
+    
+    
+            var marker_9c9a9aeeaebd1b479c10f74c919f8964 = L.marker(
+                [-4.0383, 21.7587],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_bfa3db817925eb69ae5cc43a256540b8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_297a2015a041772d5790b2a452fd7f6f = $(`<div id="html_297a2015a041772d5790b2a452fd7f6f" style="width: 100.0%; height: 100.0%;"><b>Country:</b> DR Congo<br><b>Employee Population:</b> 2987<br><b>Total Salary per Day:</b> $57350.40<br><b>Total Wastage Cost per Day:</b> $17922.00<br></div>`)[0];
+                popup_bfa3db817925eb69ae5cc43a256540b8.setContent(html_297a2015a041772d5790b2a452fd7f6f);
+            
+        
+
+        marker_9c9a9aeeaebd1b479c10f74c919f8964.bindPopup(popup_bfa3db817925eb69ae5cc43a256540b8)
+        ;
+
+        
+    
+    
+            var marker_a95c3a4ce382007f603bc22efd39fab6 = L.marker(
+                [38.9637, 35.2433],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_98efc3bcdc3f9df44b1f8d3b85d050d0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_762ba098a571bc006c1d06d5b7962e9b = $(`<div id="html_762ba098a571bc006c1d06d5b7962e9b" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Turkey<br><b>Employee Population:</b> 4384<br><b>Total Salary per Day:</b> $84172.80<br><b>Total Wastage Cost per Day:</b> $26304.00<br></div>`)[0];
+                popup_98efc3bcdc3f9df44b1f8d3b85d050d0.setContent(html_762ba098a571bc006c1d06d5b7962e9b);
+            
+        
+
+        marker_a95c3a4ce382007f603bc22efd39fab6.bindPopup(popup_98efc3bcdc3f9df44b1f8d3b85d050d0)
+        ;
+
+        
+    
+    
+            var marker_ef6537b5c09274dd57302ae01efd179f = L.marker(
+                [32.4279, 53.688],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_cda1aa9a6f88367b70f97e47116c4382 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a99ff178669a0aad38a45402a2323554 = $(`<div id="html_a99ff178669a0aad38a45402a2323554" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Iran<br><b>Employee Population:</b> 6284<br><b>Total Salary per Day:</b> $120652.80<br><b>Total Wastage Cost per Day:</b> $37704.00<br></div>`)[0];
+                popup_cda1aa9a6f88367b70f97e47116c4382.setContent(html_a99ff178669a0aad38a45402a2323554);
+            
+        
+
+        marker_ef6537b5c09274dd57302ae01efd179f.bindPopup(popup_cda1aa9a6f88367b70f97e47116c4382)
+        ;
+
+        
+    
+    
+            var marker_989da077e1ed177eff5b97186ad2c424 = L.marker(
+                [51.1657, 10.4515],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_6e75cf2acaefde933efc96f9d95d2ab6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_93b04c7c97bfc8de244444e1122c6a37 = $(`<div id="html_93b04c7c97bfc8de244444e1122c6a37" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Germany<br><b>Employee Population:</b> 12000<br><b>Total Salary per Day:</b> $230400.00<br><b>Total Wastage Cost per Day:</b> $72000.00<br></div>`)[0];
+                popup_6e75cf2acaefde933efc96f9d95d2ab6.setContent(html_93b04c7c97bfc8de244444e1122c6a37);
+            
+        
+
+        marker_989da077e1ed177eff5b97186ad2c424.bindPopup(popup_6e75cf2acaefde933efc96f9d95d2ab6)
+        ;
+
+        
+    
+    
+            var marker_dbdf66a5285f5d440dc82ebd361f4f23 = L.marker(
+                [15.87, 100.9925],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_25d9c3f3149658a2abe26b9461b3759f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e5db756f4a0d008d17126c3230dd3dd0 = $(`<div id="html_e5db756f4a0d008d17126c3230dd3dd0" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Thailand<br><b>Employee Population:</b> 9183<br><b>Total Salary per Day:</b> $176313.60<br><b>Total Wastage Cost per Day:</b> $55098.00<br></div>`)[0];
+                popup_25d9c3f3149658a2abe26b9461b3759f.setContent(html_e5db756f4a0d008d17126c3230dd3dd0);
+            
+        
+
+        marker_dbdf66a5285f5d440dc82ebd361f4f23.bindPopup(popup_25d9c3f3149658a2abe26b9461b3759f)
+        ;
+
+        
+    
+    
+            var marker_3dbe601443ba883119bcdeb23f735e15 = L.marker(
+                [51.509865, -0.118092],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_5ca2061ef9da2804d3c10735db4cdd27 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e6fa1677e97b37d768664e1c420c274a = $(`<div id="html_e6fa1677e97b37d768664e1c420c274a" style="width: 100.0%; height: 100.0%;"><b>Country:</b> United Kingdom<br><b>Employee Population:</b> 9000<br><b>Total Salary per Day:</b> $172800.00<br><b>Total Wastage Cost per Day:</b> $54000.00<br></div>`)[0];
+                popup_5ca2061ef9da2804d3c10735db4cdd27.setContent(html_e6fa1677e97b37d768664e1c420c274a);
+            
+        
+
+        marker_3dbe601443ba883119bcdeb23f735e15.bindPopup(popup_5ca2061ef9da2804d3c10735db4cdd27)
+        ;
+
+        
+    
+    
+            var marker_b57f053a3234486950cd2732d35614bd = L.marker(
+                [48.856613, 2.352222],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_6a5419ed98b337fbfd375f4341355f32 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5bc7e63fd2cc46bafb375d16f23b5457 = $(`<div id="html_5bc7e63fd2cc46bafb375d16f23b5457" style="width: 100.0%; height: 100.0%;"><b>Country:</b> France<br><b>Employee Population:</b> 9567<br><b>Total Salary per Day:</b> $183686.40<br><b>Total Wastage Cost per Day:</b> $57402.00<br></div>`)[0];
+                popup_6a5419ed98b337fbfd375f4341355f32.setContent(html_5bc7e63fd2cc46bafb375d16f23b5457);
+            
+        
+
+        marker_b57f053a3234486950cd2732d35614bd.bindPopup(popup_6a5419ed98b337fbfd375f4341355f32)
+        ;
+
+        
+    
+    
+            var marker_0dddff4c3319c4d89f508da407bf6033 = L.marker(
+                [41.902782, 12.496365],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_9313626494393c2a9461aef3b2b9b852 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e412896550d4ae1a0f00846af1bc0e4 = $(`<div id="html_6e412896550d4ae1a0f00846af1bc0e4" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Italy<br><b>Employee Population:</b> 9900<br><b>Total Salary per Day:</b> $190080.00<br><b>Total Wastage Cost per Day:</b> $59400.00<br></div>`)[0];
+                popup_9313626494393c2a9461aef3b2b9b852.setContent(html_6e412896550d4ae1a0f00846af1bc0e4);
+            
+        
+
+        marker_0dddff4c3319c4d89f508da407bf6033.bindPopup(popup_9313626494393c2a9461aef3b2b9b852)
+        ;
+
+        
+    
+    
+            var marker_2bb134a2214f98b93e4079ba178c07e7 = L.marker(
+                [-30.559482, 25.559397],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_5c736e4bafcc33722d3e833828790c59 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e74cd57237ee2b48d6c0827f021c78a9 = $(`<div id="html_e74cd57237ee2b48d6c0827f021c78a9" style="width: 100.0%; height: 100.0%;"><b>Country:</b> South Africa<br><b>Employee Population:</b> 9900<br><b>Total Salary per Day:</b> $190080.00<br><b>Total Wastage Cost per Day:</b> $59400.00<br></div>`)[0];
+                popup_5c736e4bafcc33722d3e833828790c59.setContent(html_e74cd57237ee2b48d6c0827f021c78a9);
+            
+        
+
+        marker_2bb134a2214f98b93e4079ba178c07e7.bindPopup(popup_5c736e4bafcc33722d3e833828790c59)
+        ;
+
+        
+    
+    
+            var marker_bce2f1bdf442d29894a1b69d34325f3e = L.marker(
+                [21.916221, 95.955974],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_036099f20beb3226fe0dc26d5bc4c8a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7caf993f9b8e13e550304bc34afcb120 = $(`<div id="html_7caf993f9b8e13e550304bc34afcb120" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Myanmar<br><b>Employee Population:</b> 9120<br><b>Total Salary per Day:</b> $175104.00<br><b>Total Wastage Cost per Day:</b> $54720.00<br></div>`)[0];
+                popup_036099f20beb3226fe0dc26d5bc4c8a1.setContent(html_7caf993f9b8e13e550304bc34afcb120);
+            
+        
+
+        marker_bce2f1bdf442d29894a1b69d34325f3e.bindPopup(popup_036099f20beb3226fe0dc26d5bc4c8a1)
+        ;
+
+        
+    
+    
+            var marker_63f76e49a864f9ed49d2389981bfefe4 = L.marker(
+                [35.907757, 126.978413],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_da3705e1271b1021e6cd20dc933e1dd4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_243470458f3972826ce0789782e3a8b1 = $(`<div id="html_243470458f3972826ce0789782e3a8b1" style="width: 100.0%; height: 100.0%;"><b>Country:</b> South Korea<br><b>Employee Population:</b> 4000<br><b>Total Salary per Day:</b> $76800.00<br><b>Total Wastage Cost per Day:</b> $24000.00<br></div>`)[0];
+                popup_da3705e1271b1021e6cd20dc933e1dd4.setContent(html_243470458f3972826ce0789782e3a8b1);
+            
+        
+
+        marker_63f76e49a864f9ed49d2389981bfefe4.bindPopup(popup_da3705e1271b1021e6cd20dc933e1dd4)
+        ;
+
+        
+    
+    
+            var marker_d04a213066b06a5fa1f48db0f58bb715 = L.marker(
+                [37.566535, -122.419416],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_f3a1d8313f5746f10eee78f99580dfda = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6b809a54929508d32d7239962380bbc = $(`<div id="html_d6b809a54929508d32d7239962380bbc" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Colombia<br><b>Employee Population:</b> 1200<br><b>Total Salary per Day:</b> $23040.00<br><b>Total Wastage Cost per Day:</b> $7200.00<br></div>`)[0];
+                popup_f3a1d8313f5746f10eee78f99580dfda.setContent(html_d6b809a54929508d32d7239962380bbc);
+            
+        
+
+        marker_d04a213066b06a5fa1f48db0f58bb715.bindPopup(popup_f3a1d8313f5746f10eee78f99580dfda)
+        ;
+
+        
+    
+    
+            var marker_6b0a413a870a297104f6ba5dc121a43d = L.marker(
+                [40.73061, -74.006111],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_cca7934d33953679b34ac58b071101e0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5dc027963726e5e921d5da3b91fd3335 = $(`<div id="html_5dc027963726e5e921d5da3b91fd3335" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Spain<br><b>Employee Population:</b> 2000<br><b>Total Salary per Day:</b> $38400.00<br><b>Total Wastage Cost per Day:</b> $12000.00<br></div>`)[0];
+                popup_cca7934d33953679b34ac58b071101e0.setContent(html_5dc027963726e5e921d5da3b91fd3335);
+            
+        
+
+        marker_6b0a413a870a297104f6ba5dc121a43d.bindPopup(popup_cca7934d33953679b34ac58b071101e0)
+        ;
+
+        
+    
+    
+            var marker_01f621648256f593dc556ff970a27ed8 = L.marker(
+                [4.710989, -3.717017],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_8a452fbac0f79eb9832a138f2bb88b14 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9fcb2faec4998c3918df7e01ec2901dc = $(`<div id="html_9fcb2faec4998c3918df7e01ec2901dc" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Ukraine<br><b>Employee Population:</b> 7100<br><b>Total Salary per Day:</b> $136320.00<br><b>Total Wastage Cost per Day:</b> $42600.00<br></div>`)[0];
+                popup_8a452fbac0f79eb9832a138f2bb88b14.setContent(html_9fcb2faec4998c3918df7e01ec2901dc);
+            
+        
+
+        marker_01f621648256f593dc556ff970a27ed8.bindPopup(popup_8a452fbac0f79eb9832a138f2bb88b14)
+        ;
+
+        
+    
+    
+            var marker_1397eaa594642141eeeafa003174c4c4 = L.marker(
+                [-6.369028, 31.042871],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_4cc84c5f2abbb4bc760476b9ea250922 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_15fc3e14fb919816a5900f9917d638a0 = $(`<div id="html_15fc3e14fb919816a5900f9917d638a0" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Tanzania<br><b>Employee Population:</b> 5020<br><b>Total Salary per Day:</b> $96384.00<br><b>Total Wastage Cost per Day:</b> $30120.00<br></div>`)[0];
+                popup_4cc84c5f2abbb4bc760476b9ea250922.setContent(html_15fc3e14fb919816a5900f9917d638a0);
+            
+        
+
+        marker_1397eaa594642141eeeafa003174c4c4.bindPopup(popup_4cc84c5f2abbb4bc760476b9ea250922)
+        ;
+
+        
+    
+    
+            var marker_db217bee63e2ba33a54ad0a2b9fb1949 = L.marker(
+                [-34.6118, -58.4173],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_8d7d93d01c57f3ad6edaa740b4bc428b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_17d3a182245e8793c3cd41ce81308b46 = $(`<div id="html_17d3a182245e8793c3cd41ce81308b46" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Argentina<br><b>Employee Population:</b> 2530<br><b>Total Salary per Day:</b> $48576.00<br><b>Total Wastage Cost per Day:</b> $15180.00<br></div>`)[0];
+                popup_8d7d93d01c57f3ad6edaa740b4bc428b.setContent(html_17d3a182245e8793c3cd41ce81308b46);
+            
+        
+
+        marker_db217bee63e2ba33a54ad0a2b9fb1949.bindPopup(popup_8d7d93d01c57f3ad6edaa740b4bc428b)
+        ;
+
+        
+    
+    
+            var marker_598a41280fb533a5d15a89ff7de22802 = L.marker(
+                [-1.286389, 36.8219],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_6e827a4f8d142b6e5c5dba20ff7512f0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_92c021a5c2c2d76e2467ce251ebc28bc = $(`<div id="html_92c021a5c2c2d76e2467ce251ebc28bc" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Kenya<br><b>Employee Population:</b> 1240<br><b>Total Salary per Day:</b> $23808.00<br><b>Total Wastage Cost per Day:</b> $7440.00<br></div>`)[0];
+                popup_6e827a4f8d142b6e5c5dba20ff7512f0.setContent(html_92c021a5c2c2d76e2467ce251ebc28bc);
+            
+        
+
+        marker_598a41280fb533a5d15a89ff7de22802.bindPopup(popup_6e827a4f8d142b6e5c5dba20ff7512f0)
+        ;
+
+        
+    
+    
+            var marker_54032ab13673f24e32dafcfeb15950e4 = L.marker(
+                [51.9194, 19.1451],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_f29b99d69b0befde1efc4312b180ee26 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2c4f0ec46b5e9837b09edc7d64d9d798 = $(`<div id="html_2c4f0ec46b5e9837b09edc7d64d9d798" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Poland<br><b>Employee Population:</b> 7500<br><b>Total Salary per Day:</b> $144000.00<br><b>Total Wastage Cost per Day:</b> $45000.00<br></div>`)[0];
+                popup_f29b99d69b0befde1efc4312b180ee26.setContent(html_2c4f0ec46b5e9837b09edc7d64d9d798);
+            
+        
+
+        marker_54032ab13673f24e32dafcfeb15950e4.bindPopup(popup_f29b99d69b0befde1efc4312b180ee26)
+        ;
+
+        
+    
+    
+            var marker_4f8b7ecd308af501b140aa732982d477 = L.marker(
+                [28.0339, -106.8317],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_dec9443161a1bd66cb0dff788eae2334 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_408c034feae89cfdbb170b0a12dafc3a = $(`<div id="html_408c034feae89cfdbb170b0a12dafc3a" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Algeria<br><b>Employee Population:</b> 1766<br><b>Total Salary per Day:</b> $33907.20<br><b>Total Wastage Cost per Day:</b> $10596.00<br></div>`)[0];
+                popup_dec9443161a1bd66cb0dff788eae2334.setContent(html_408c034feae89cfdbb170b0a12dafc3a);
+            
+        
+
+        marker_4f8b7ecd308af501b140aa732982d477.bindPopup(popup_dec9443161a1bd66cb0dff788eae2334)
+        ;
+
+        
+    
+    
+            var marker_a34775d9e5f2d174b2f4cdbd67ec3838 = L.marker(
+                [56.1304, -106.3468],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_068eb74a14e3d444ff90767912b2e88c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f2eac7bb5de587e335b933e1805a92d5 = $(`<div id="html_f2eac7bb5de587e335b933e1805a92d5" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Canada<br><b>Employee Population:</b> 2750<br><b>Total Salary per Day:</b> $52800.00<br><b>Total Wastage Cost per Day:</b> $16500.00<br></div>`)[0];
+                popup_068eb74a14e3d444ff90767912b2e88c.setContent(html_f2eac7bb5de587e335b933e1805a92d5);
+            
+        
+
+        marker_a34775d9e5f2d174b2f4cdbd67ec3838.bindPopup(popup_068eb74a14e3d444ff90767912b2e88c)
+        ;
+
+        
+    
+    
+            var marker_7b0abb18e14b5a324db2c4b1b0fd1a71 = L.marker(
+                [1.3733, 32.2903],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_25f3cf775ec3f700a8e74abcb040cc39 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ed7aa7c4dc1c22a3dceb1165c1e0be56 = $(`<div id="html_ed7aa7c4dc1c22a3dceb1165c1e0be56" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Uganda<br><b>Employee Population:</b> 1800<br><b>Total Salary per Day:</b> $34560.00<br><b>Total Wastage Cost per Day:</b> $10800.00<br></div>`)[0];
+                popup_25f3cf775ec3f700a8e74abcb040cc39.setContent(html_ed7aa7c4dc1c22a3dceb1165c1e0be56);
+            
+        
+
+        marker_7b0abb18e14b5a324db2c4b1b0fd1a71.bindPopup(popup_25f3cf775ec3f700a8e74abcb040cc39)
+        ;
+
+        
+    
+    
+            var marker_fd160616392251433d9b931d4f70fd7f = L.marker(
+                [32.2903, -7.5965],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_db546284f2f1f913fa9a006d84395e4e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96593bbad41cd43f8fd6c53111180fad = $(`<div id="html_96593bbad41cd43f8fd6c53111180fad" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Morocco<br><b>Employee Population:</b> 1350<br><b>Total Salary per Day:</b> $25920.00<br><b>Total Wastage Cost per Day:</b> $8100.00<br></div>`)[0];
+                popup_db546284f2f1f913fa9a006d84395e4e.setContent(html_96593bbad41cd43f8fd6c53111180fad);
+            
+        
+
+        marker_fd160616392251433d9b931d4f70fd7f.bindPopup(popup_db546284f2f1f913fa9a006d84395e4e)
+        ;
+
+        
+    
+    
+            var marker_a6d3a7820e85b56118525270921c0ff0 = L.marker(
+                [33.3152, 44.3081],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_a4ee2af711d06cae75b4173fb7d8cd6e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2df7243fa33d4c28f287befab3bde26 = $(`<div id="html_e2df7243fa33d4c28f287befab3bde26" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Iraq<br><b>Employee Population:</b> 1350<br><b>Total Salary per Day:</b> $25920.00<br><b>Total Wastage Cost per Day:</b> $8100.00<br></div>`)[0];
+                popup_a4ee2af711d06cae75b4173fb7d8cd6e.setContent(html_e2df7243fa33d4c28f287befab3bde26);
+            
+        
+
+        marker_a6d3a7820e85b56118525270921c0ff0.bindPopup(popup_a4ee2af711d06cae75b4173fb7d8cd6e)
+        ;
+
+        
+    
+    
+            var marker_319380e04d7888b756e7597978014239 = L.marker(
+                [15.5524, 28.185],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_decfa95edf17fae194483320b558873f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_20b283cdfdf3a86bef6e99c038bafdcc = $(`<div id="html_20b283cdfdf3a86bef6e99c038bafdcc" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Sudan<br><b>Employee Population:</b> 1400<br><b>Total Salary per Day:</b> $26880.00<br><b>Total Wastage Cost per Day:</b> $8400.00<br></div>`)[0];
+                popup_decfa95edf17fae194483320b558873f.setContent(html_20b283cdfdf3a86bef6e99c038bafdcc);
+            
+        
+
+        marker_319380e04d7888b756e7597978014239.bindPopup(popup_decfa95edf17fae194483320b558873f)
+        ;
+
+        
+    
+    
+            var marker_e99154b0338e92661230e10710b271f7 = L.marker(
+                [-9.19, -75.0152],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_012675b09cbf1d79ca4ca9457a452083 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0b99b22d416fe162af61f920862046d1 = $(`<div id="html_0b99b22d416fe162af61f920862046d1" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Peru<br><b>Employee Population:</b> 2000<br><b>Total Salary per Day:</b> $38400.00<br><b>Total Wastage Cost per Day:</b> $12000.00<br></div>`)[0];
+                popup_012675b09cbf1d79ca4ca9457a452083.setContent(html_0b99b22d416fe162af61f920862046d1);
+            
+        
+
+        marker_e99154b0338e92661230e10710b271f7.bindPopup(popup_012675b09cbf1d79ca4ca9457a452083)
+        ;
+
+        
+    
+    
+            var marker_29bcb9c9a3396a9a073aae9877d41cce = L.marker(
+                [3.139, 101.6865],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_5731dc3fb38a3cbbabdc8db2a7dc3741 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f98199f3e00ade651b7b951e58fab414 = $(`<div id="html_f98199f3e00ade651b7b951e58fab414" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Malaysia<br><b>Employee Population:</b> 4200<br><b>Total Salary per Day:</b> $80640.00<br><b>Total Wastage Cost per Day:</b> $25200.00<br></div>`)[0];
+                popup_5731dc3fb38a3cbbabdc8db2a7dc3741.setContent(html_f98199f3e00ade651b7b951e58fab414);
+            
+        
+
+        marker_29bcb9c9a3396a9a073aae9877d41cce.bindPopup(popup_5731dc3fb38a3cbbabdc8db2a7dc3741)
+        ;
+
+        
+    
+    
+            var marker_1b9a3668a4ac70d1cb3fdc40e8f35d02 = L.marker(
+                [1.3521, 103.8198],
+                {}
+            ).addTo(map_c6eb6ce427c1a2ab2d5d97d4da58390c);
+        
+    
+        var popup_66d13ee7c93d34b4cdd6deaa251fecc2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_db182a86d461dcaf7bf4a4064063e024 = $(`<div id="html_db182a86d461dcaf7bf4a4064063e024" style="width: 100.0%; height: 100.0%;"><b>Country:</b> Singapore<br><b>Employee Population:</b> 2200<br><b>Total Salary per Day:</b> $42240.00<br><b>Total Wastage Cost per Day:</b> $13200.00<br></div>`)[0];
+                popup_66d13ee7c93d34b4cdd6deaa251fecc2.setContent(html_db182a86d461dcaf7bf4a4064063e024);
+            
+        
+
+        marker_1b9a3668a4ac70d1cb3fdc40e8f35d02.bindPopup(popup_66d13ee7c93d34b4cdd6deaa251fecc2)
+        ;
+
+        
+    
+</script>
+</html>
